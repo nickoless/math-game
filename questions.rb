@@ -1,5 +1,4 @@
 class Question
-
   def initialize()
     @num_one = rand(20)
     @num_two = rand(20)
@@ -10,8 +9,11 @@ class Question
     "What is #{@num_one} plus #{@num_two}?"
   end
 
-  def validation(answer)
-    answer = @answer
+  def testanswer
+    @answer
   end
 
+  def correct?(answer)
+    answer == @answer
+  end
 end
